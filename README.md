@@ -30,3 +30,14 @@ I will use this name in my database connection configuration on my server.
 
 I am also including a `database.sql` text file in my repo that will include all of my
 `CREATE TABLE` queries so others can re-create my database while testing my application.
+
+### High Level Development Plan
+
+    * Create static and dynamic files (HTML, CSS, JavaScript including jQuery)
+    * Install Express (Node.js) and PostgreSQL
+    * Make sure all files are sourced into HTML file
+    * Create the HTML basic structure for the application
+    * Create a database using SQL via Postico and include queries on my text file
+    * Create the code for GET/POST/DELETE/PUT requests on server, client, router and pool JavaScript files
+    * Create the code for CSS styling
+    * Test, test test
