@@ -16,6 +16,7 @@ In this project, I am creating a 'TO DO' application. Here are the features:
 ### Styling
 
 I used CSS styling to move the aesthetic of the page beyond the vanella HTML look:
+
     * background color of the page
     * font family and size
     * text color & or background color of tasks (to show whether or not they have been completed)
