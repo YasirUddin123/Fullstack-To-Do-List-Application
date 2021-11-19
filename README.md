@@ -40,8 +40,8 @@ I am also including a `database.sql` text file in my repo that will include all 
     * Run npm init --yes ✅
     * Make sure "start" script exists in our package.json ✅
     * Run npm install express and pg ✅
-    * Create a database using SQL via Postico
-    * Create a 'to-do' table using SQL via Postico
+    * Create a database using SQL via Postico ✅
+    * Create a 'to-do' table using SQL via Postico ✅
     * Include queries on my database.sql text file
     * Wire up database connection in pool.js file
     * Create the minimum code for working Express server in server.js
