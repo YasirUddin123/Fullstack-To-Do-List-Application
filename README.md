@@ -29,7 +29,7 @@ I am also including a `database.sql` text file in my repo that will include all 
 ### High Level Development Plan
 #### Step 1: Initialize Project
     * Make a new git branch to 'initialize' my work ✅
-    * Add files and folders to project directory (including .gitignore, HTML, CSS, and JavaScript + jQuery)
+    * Add files and folders to project directory (including .gitignore, HTML, CSS, and JavaScript + jQuery) ✅
 
 ##### Front-End:
     * Create the HTML basic structure for the application
