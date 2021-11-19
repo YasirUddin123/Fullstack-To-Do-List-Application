@@ -37,7 +37,7 @@ I am also including a `database.sql` text file in my repo that will include all 
         * CSS, jQuery, JavaScript ✅
 
 ##### Back-End:
-    * Run npm init --yes
+    * Run npm init --yes ✅
     * Make sure "start" script exists in our package.json
     * Run npm install express and pg
     * Create a database using SQL via Postico
