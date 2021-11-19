@@ -28,24 +28,23 @@ I am also including a `database.sql` text file in my repo that will include all 
 
 ### High Level Development Plan
 #### Step 1: Initialize Project
-    * Make a new git branch to 'initialize' my work
-    * Add files and folders to project directory (including .gitignore, HTML, CSS, and JavaScript + jQuery)
+    * Make a new git branch to 'initialize' my work ✅
+    * Add files and folders to project directory (including .gitignore, HTML, CSS, and JavaScript + jQuery) ✅
 
 ##### Front-End:
-    * Create the HTML basic structure for the application
-    * Make sure all files are sourced into HTML file
-        * CSS, jQuery, JavaScript
+    * Create the HTML basic structure for the application ✅
+    * Make sure all files are sourced into HTML file ✅
+        * CSS, jQuery, JavaScript ✅
 
 ##### Back-End:
-    * Run npm init --yes
-    * Make sure "start" script exists in our package.json
-    * Run npm install express and pg
-    * Create a database using SQL via Postico
-    * Create a 'to-do' table using SQL via Postico
-    * Include queries on my database.sql text file
-    * Wire up database connection in pool.js file
-    * Create the minimum code for working Express server in server.js
-    * Follow the logic to make the code for remaining files
+    * Run npm init --yes ✅
+    * Make sure "start" script exists in our package.json ✅
+    * Run npm install express and pg ✅
+    * Create a database using SQL via Postico ✅
+    * Create a 'to-do' table using SQL via Postico ✅
+    * Include queries on my database.sql text file ✅
+    * Wire up database connection in pool.js file ✅
+    * Create the minimum code for working Express server in server.js ✅
 
 #### Step 2: Develop Features
     * Create a task
