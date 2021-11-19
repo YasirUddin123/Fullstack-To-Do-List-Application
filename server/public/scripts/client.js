@@ -14,9 +14,39 @@ function onReady() {
 // If the response is successful,
 // the server will send a response to the client
 // and append every task submitted.
+function renderTasks() {
+    $.ajax({
+        type: 'GET',
+        url: '/tasks'
+    }).then((response) => {
+        $("#tasksTableBody").empty();
+        console.log('GET /tasks response', response);
+        for(let task of response) {
+            $('#tasksTableBody').append(`
+                <tr>
+                    <td>${task.task}<td>
+                </tr>
+            `);
+        }
+    })
+}
 
 
 // Make a POST request to store data in my server.
 // If it's successful,
 // then we want to update our DOM with the new data
 // by calling the renderTasks function.
+function addTask() {
+    const newTask = {
+        task: $('#task').val()
+    }
+    $.ajax({
+        type: 'POST',
+        url: '/tasks',
+        data: newTask
+    }).then((response) => {
+        console.log('POST /tasks success!');
+        $('#task').val('')
+        renderTasks();
+    });
+}
