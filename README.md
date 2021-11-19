@@ -44,7 +44,7 @@ I am also including a `database.sql` text file in my repo that will include all 
     * Create a 'to-do' table using SQL via Postico ✅
     * Include queries on my database.sql text file ✅
     * Wire up database connection in pool.js file ✅
-    * Create the minimum code for working Express server in server.js
+    * Create the minimum code for working Express server in server.js ✅
 
 #### Step 2: Develop Features
     * Create a task
