@@ -38,7 +38,7 @@ I am also including a `database.sql` text file in my repo that will include all 
 
 ##### Back-End:
     * Run npm init --yes ✅
-    * Make sure "start" script exists in our package.json
+    * Make sure "start" script exists in our package.json ✅
     * Run npm install express and pg
     * Create a database using SQL via Postico
     * Create a 'to-do' table using SQL via Postico
