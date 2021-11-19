@@ -6,21 +6,26 @@
         <title>To-Do Application</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <script src="./vendors/jquery.js"></script>
+        <script src="./scripts/client.js"></script>
     </head>
     <body>
         <h1>Add a task to the list</h1>
-        <div id="addTask"></div>
+        <div id="addTask">
             <label for="task">Task</label>
             <input type="text" id="task"/>
             <button id="createTask">Create Task</button>
+        </div>
 
         <h2>Current To-Do List</h2>
-        <table id="tableWrapper"></table>
-        <thead>
-            <tr>
-                <th>Tasks</th>
-            </tr>
-        </thead>
-    </body id="tasksTableBody">
+        <table id="tableWrapper">
+            <thead>
+                <tr>
+                    <th>Tasks</th>
+                </tr>
+            </thead>
+        <tbody id="tasksTableBody"></tbody>
+        </table>
+    </body>
 </html>

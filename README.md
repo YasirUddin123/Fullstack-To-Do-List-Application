@@ -33,8 +33,8 @@ I am also including a `database.sql` text file in my repo that will include all 
 
 ##### Front-End:
     * Create the HTML basic structure for the application ✅
-    * Make sure all files are sourced into HTML file
-        * CSS, jQuery, JavaScript
+    * Make sure all files are sourced into HTML file ✅
+        * CSS, jQuery, JavaScript ✅
 
 ##### Back-End:
     * Run npm init --yes
