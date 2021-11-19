@@ -32,7 +32,7 @@ I am also including a `database.sql` text file in my repo that will include all 
     * Add files and folders to project directory (including .gitignore, HTML, CSS, and JavaScript + jQuery) ✅
 
 ##### Front-End:
-    * Create the HTML basic structure for the application
+    * Create the HTML basic structure for the application ✅
     * Make sure all files are sourced into HTML file
         * CSS, jQuery, JavaScript
 
