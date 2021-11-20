@@ -51,7 +51,11 @@ router.post('/', (req, res) => {
         });
 });
 
-// DELETE request
+// DELETE => We need to make a DELETE route to DELETE data in the database per the client request.
+// Since we're using router, the path is actually for tasks, but we can use '/' here.
+// Then we need to use SQL text and query to DELETE data from the database.
+// If it's successful, we delete the data from the database and send a status 200
+// If it's not successful, we send a 500 status.
 
 
 module.exports = router;

@@ -3,11 +3,14 @@ $(document).ready(onReady);
 
 
 function onReady() {
-   // These tie into making a GET and POST request.
-   // This is important when we handle an event handler when we click on the button to add a task on our application
-   // And render to the DOM.
+    // These tie into making a GET and POST request.
+    // This is important when we handle an event handler when we click on the button to add a task on our application
+    // And render to the DOM.
     renderTasks();
     $('#createTask').on('click', addTask);
+    // We need to create an event handler to delete a task in our list after the document loads:
+
+
 }
 
 // Making a GET request.
@@ -52,3 +55,9 @@ function addTask() {
 }
 
 // Making a delete request
+// If we want to delete a task on our list after the page loads
+// We need to make sure we are targetting that specific task with the help of its id number.
+// When this request is successful,
+// We want to update our DOM by removing the task,
+// making sure it's deleted from the data base
+// and re-render the DOM.
