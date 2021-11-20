@@ -56,7 +56,7 @@ I am also including a `database.sql` text file in my repo that will include all 
         * Re-render DOM ✅
 
     * Complete a task
-        * Update task in database
+        * Update task in database ✅
         * Task should be checked off
         * Use CSS to differentiate
         * Re-render DOM

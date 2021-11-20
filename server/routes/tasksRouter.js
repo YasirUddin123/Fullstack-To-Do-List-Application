@@ -81,5 +81,32 @@ router.delete('/:id', (req, res) => {
 // Then we need to use SQL text and query to UPDATE data on the database.
 // If it's successful, we update the data on the database and send a status 200
 // If it's not successful, we send a 500 status.
+router.put('/:id', (req, res) => {
+    console.log(req.params);
+    console.log(req.body);
+    const taskID = req.params.id;
+    const task = req.body.task;
+
+    const sqlText = `
+        UPDATE "tasks"
+            SET
+                "task"=$1
+            WHERE "id"=$2;
+    `;
+    const sqlValues = [
+        task,
+        taskID
+    ];
+    console.log('sqlText', sqlText);
+    console.log('sqlValues', sqlValues);
+    pool.query(sqlText, sqlValues)
+        .then((dbResult) => {
+            res.sendStatus(200);
+        })
+        .catch((dbErr) => {
+            console.log(dbErr);
+            res.sendStatus(500);
+        });
+});
 
 module.exports = router;

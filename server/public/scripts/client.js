@@ -11,6 +11,7 @@ function onReady() {
     // We need to create an event handler to delete a task in our list after the document loads:
     $('#tasksTableBody').on('click', '.delete-button', deleteTask)
     // We need to create an event handler to update a task in our list after the document loads:
+    $('#update-button').on('click', updateTask)
 
 
 }
@@ -83,3 +84,21 @@ function deleteTask() {
 // We want to update our DOM by UPDATING the task with the specific changes requested,
 // making sure it's also updated on the data base
 // and re-render the DOM.
+function updateTask() {
+    //to test
+    console.log('click!');
+    const updatedTask = {
+        id: $('#id-update').val(),
+        task: $('#task-update').val()
+    }
+    $.ajax({
+        method: 'PUT',
+        url: `/tasks/${updatedTask.id}`,
+        data: updatedTask
+    }).then((res) => {
+        console.log('PUT is sent!');
+        renderTasks();
+    }).catch((err) => {
+        console.log(err);
+    });
+}
