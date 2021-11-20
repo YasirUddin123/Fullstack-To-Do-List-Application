@@ -50,3 +50,5 @@ function addTask() {
         renderTasks();
     });
 }
+
+// Making a delete request

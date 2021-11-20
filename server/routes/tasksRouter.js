@@ -51,5 +51,7 @@ router.post('/', (req, res) => {
         });
 });
 
+// DELETE request
+
 
 module.exports = router;
