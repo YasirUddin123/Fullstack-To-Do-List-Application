@@ -76,4 +76,10 @@ router.delete('/:id', (req, res) => {
         });
 });
 
+// UPDATE => We need to make a PUT route to UPDATE data in the database per the client request.
+// Since we're using router, the path is actually for tasks, but we can use '/' here.
+// Then we need to use SQL text and query to UPDATE data on the database.
+// If it's successful, we update the data on the database and send a status 200
+// If it's not successful, we send a 500 status.
+
 module.exports = router;

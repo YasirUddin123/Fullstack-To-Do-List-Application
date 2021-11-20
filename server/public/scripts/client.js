@@ -10,6 +10,7 @@ function onReady() {
     $('#createTask').on('click', addTask);
     // We need to create an event handler to delete a task in our list after the document loads:
     $('#tasksTableBody').on('click', '.delete-button', deleteTask)
+    // We need to create an event handler to update a task in our list after the document loads:
 
 
 }
@@ -57,7 +58,7 @@ function addTask() {
     });
 }
 
-// Making a delete request
+// Making a DELETE request
 // If we want to delete a task on our list after the page loads
 // We need to make sure we are targetting that specific task with the help of its id number.
 // When this request is successful,
@@ -74,3 +75,11 @@ function deleteTask() {
         renderTasks();
     })
 }
+
+// Making a PUT request for updating task
+// If we want to UPDATE a task on our list after the page loads
+// We need to make sure we are targetting that specific task with the help of its id number.
+// When this request is successful,
+// We want to update our DOM by UPDATING the task with the specific changes requested,
+// making sure it's also updated on the data base
+// and re-render the DOM.
