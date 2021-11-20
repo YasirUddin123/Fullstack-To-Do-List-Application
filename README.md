@@ -51,9 +51,9 @@ I am also including a `database.sql` text file in my repo that will include all 
         * Store in database ✅
         * Re-render DOM ✅
 
-    * Delete a task
-        * Delete task in database
-        * Re-render DOM
+    * Delete a task ✅
+        * Delete task in database ✅
+        * Re-render DOM ✅
 
     * Complete a task
         * Update task in database

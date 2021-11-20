@@ -56,6 +56,24 @@ router.post('/', (req, res) => {
 // Then we need to use SQL text and query to DELETE data from the database.
 // If it's successful, we delete the data from the database and send a status 200
 // If it's not successful, we send a 500 status.
+router.delete('/:id', (req, res) => {
+    console.log('DELETE /tasks/:id');
+    console.log('req.params:', req.params.id);
+    const taskIdToDelete = req.params.id;
+    const sqlText = `
+        DELETE FROM "tasks"
+            WHERE "id"=$1;
+    `;
+    const sqlValues = [taskIdToDelete];
 
+    pool.query(sqlText, sqlValues)
+        .then((dbResult) => {
+            res.sendStatus(200);
+        })
+        .catch((dbErr) => {
+            console.log(dbErr);
+            res.sendStatus(500);
+        });
+});
 
 module.exports = router;

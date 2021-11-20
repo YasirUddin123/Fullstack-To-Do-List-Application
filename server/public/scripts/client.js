@@ -9,6 +9,7 @@ function onReady() {
     renderTasks();
     $('#createTask').on('click', addTask);
     // We need to create an event handler to delete a task in our list after the document loads:
+    $('#tasksTableBody').on('click', '.delete-button', deleteTask)
 
 
 }
@@ -25,9 +26,11 @@ function renderTasks() {
         $("#tasksTableBody").empty();
         console.log('GET /tasks response', response);
         for(let task of response) {
+            // We need to make sure we append code to ensure the task can be deleted based on its id.
             $('#tasksTableBody').append(`
                 <tr>
                     <td>${task.task}<td>
+                    <td><button class="delete-button" data-id="${task.id}">Delete</button></td>
                 </tr>
             `);
         }
@@ -61,3 +64,13 @@ function addTask() {
 // We want to update our DOM by removing the task,
 // making sure it's deleted from the data base
 // and re-render the DOM.
+function deleteTask() {
+    const taskIdToDelete = $(this).data('id');
+    $.ajax({
+        type: 'DELETE',
+        url: `/tasks/${taskIdToDelete}`
+    }).then((response) => {
+        console.log(response);
+        renderTasks();
+    })
+}
