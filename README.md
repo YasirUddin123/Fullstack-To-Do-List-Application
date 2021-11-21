@@ -47,19 +47,19 @@ I am also including a `database.sql` text file in my repo that will include all 
     * Create the minimum code for working Express server in server.js ✅
 
 #### Step 2: Develop Features
-    * Create a task
-        * Store in database
-        * Re-render DOM
+    * Create a task ✅
+        * Store in database ✅
+        * Re-render DOM ✅
 
-    * Delete a task
-        * Delete task in database
-        * Re-render DOM
+    * Delete a task ✅
+        * Delete task in database ✅
+        * Re-render DOM ✅
 
     * Complete a task
-        * Update task in database
-        * Task should be checked off
-        * Use CSS to differentiate
-        * Re-render DOM
+        * Update task in database ✅
+        * Task should be checked off ✅
+        * Use CSS to differentiate ✅
+        * Re-render DOM ✅
 
     * CSS! Make it look sch-mancy
 
