@@ -11,12 +11,6 @@ In this project, I am creating a 'TO DO' application. Here are the features:
     * Whether or not a Task is completed can also be stored in the database.
     * Deleting a Task can remove it from both the front end as well as the database.
 
-I'm happy to share my code and talk more on how I created this application.
-Please feel free to reach out to me if you'd like to connect. I'd love to meet over Zoom, coffee, or however else works best for you.
-
-email: yasiruddin625@gmail.com
-LinkedIn: https://www.linkedin.com/in/yasirmuddin/
-
 ### Styling
 I used CSS styling to move the aesthetic of the page beyond the vanella HTML look:
 
@@ -70,3 +64,13 @@ I am also including a `database.sql` text file in my repo that will include all 
     * CSS! Make it look sch-mancy
 
 #### Step 3: Test, Tweak, Repeat
+
+### Gratitude and Open To Connecting
+
+Thank you to Prime Digital Academy for providing me the resources, knowledge, and support in order to complete this application!
+
+I'm happy to share my code and talk more on how I created this application.
+Please feel free to reach out to me if you'd like to provide feedback, connect, and/or talk more about the field. I'd love to meet over Zoom, coffee, or however else works best for you!
+
+email: yasiruddin625@gmail.com
+LinkedIn: https://www.linkedin.com/in/yasirmuddin/
