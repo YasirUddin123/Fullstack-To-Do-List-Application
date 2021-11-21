@@ -74,9 +74,9 @@ I am also including a `database.sql` text file in my repo that will include all 
 
 ### Gratitude and Open To Connecting
 
-Thank you to Prime Digital Academy for providing me the resources, knowledge, and support in order to complete this application!
+Thank you to Prime Digital Academy, my instructor Matthew Black, and my cohort mates for providing me the resources, knowledge, and support in order to complete this application!
 
 Please feel free to reach out to me if you have questions, want to provide feedback, code together, and/or talk more about the field. I'd love to meet over Zoom, coffee, or however else works best!
 
-email: yasiruddin625@gmail.com
+Email: yasiruddin625@gmail.com
 LinkedIn: https://www.linkedin.com/in/yasirmuddin/
