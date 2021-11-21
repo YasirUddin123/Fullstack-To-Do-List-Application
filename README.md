@@ -57,9 +57,9 @@ I am also including a `database.sql` text file in my repo that will include all 
 
     * Complete a task
         * Update task in database ✅
-        * Task should be checked off
-        * Use CSS to differentiate
-        * Re-render DOM
+        * Task should be checked off ✅
+        * Use CSS to differentiate ✅
+        * Re-render DOM ✅
 
     * CSS! Make it look sch-mancy
 

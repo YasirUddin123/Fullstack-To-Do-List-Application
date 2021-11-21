@@ -38,7 +38,7 @@ router.post('/', (req, res) => {
         ($1)
     `;
     const sqlValues = [
-        newTask.task
+        newTask.task,
     ];
     pool.query(sqlText, sqlValues)
         .then((dbResult) => {
@@ -81,22 +81,17 @@ router.delete('/:id', (req, res) => {
 // Then we need to use SQL text and query to UPDATE data on the database.
 // If it's successful, we update the data on the database and send a status 200
 // If it's not successful, we send a 500 status.
-router.put('/:id', (req, res) => {
+router.put('/complete/:id', (req, res) => {
     console.log(req.params);
     console.log(req.body);
     const taskID = req.params.id;
-    const task = req.body.task;
-
+    const completedTask = req.body.completedTask;
     const sqlText = `
         UPDATE "tasks"
-            SET
-                "task"=$1
+            SET "completed"= $1
             WHERE "id"=$2;
     `;
-    const sqlValues = [
-        task,
-        taskID
-    ];
+    const sqlValues = [completedTask, taskID];
     console.log('sqlText', sqlText);
     console.log('sqlValues', sqlValues);
     pool.query(sqlText, sqlValues)

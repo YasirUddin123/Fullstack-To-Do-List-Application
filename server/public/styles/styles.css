@@ -1,3 +1,13 @@
 body {
     background-color: aliceblue;
 }
+
+/* CSS when we mark a task complete */
+.addSomeGreen {
+   background-color: green;
+}
+
+/* CSS when a mark hasn't been marked completed yet */
+.addSomeGrey {
+    background-color: grey;
+}

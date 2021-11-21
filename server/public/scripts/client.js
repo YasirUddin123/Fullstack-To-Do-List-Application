@@ -1,18 +1,16 @@
 // Making sure we can run everything when the document loads.
 $(document).ready(onReady);
 
-
 function onReady() {
     // These tie into making a GET and POST request.
     // This is important when we handle an event handler when we click on the button to add a task on our application
-    // And render to the DOM.
+    // and render to the DOM.
     renderTasks();
     $('#createTask').on('click', addTask);
     // We need to create an event handler to delete a task in our list after the document loads:
     $('#tasksTableBody').on('click', '.delete-button', deleteTask)
-    // We need to create an event handler to update a task in our list after the document loads:
-    $('#update-button').on('click', updateTask)
-
+    // We need to create an event handler to check-off/complete a task in our list after the document loads (updated this psuedocode):
+    $('#tasksTableBody').on('click', '.complete-button', updateTask)
 
 }
 
@@ -29,16 +27,25 @@ function renderTasks() {
         console.log('GET /tasks response', response);
         for(let task of response) {
             // We need to make sure we append code to ensure the task can be deleted based on its id.
-            $('#tasksTableBody').append(`
-                <tr>
-                    <td>${task.task}<td>
+            // We also need to make an if/else statement to toggle the 'marked complete' color when checkmarked.
+            if(task.completed === true){
+                $('#tasksTableBody').append(`<tr class="${task.id}"><td>${task.task}</td></tr>`)
+                $(`.${task.id}`).addClass('addSomeGreen')
+                $(`.${task.id}`).append(`
+                    <td><input type="checkbox"class="complete-button" data-id="${task.id}" data-completed="${task.completed}" checked></td>
                     <td><button class="delete-button" data-id="${task.id}">Delete</button></td>
-                </tr>
-            `);
-        }
+                `)
+            } else if(task.completed === false){
+                $('#tasksTableBody').append(`<tr class="${task.id}"><td>${task.task}</td></tr>`)
+                $(`.${task.id}`).addClass('addSomeGrey')
+                $(`.${task.id}`).append(`
+                    <td><input type="checkbox"class="complete-button" data-id="${task.id}" data-completed="${task.completed}"></td>
+                    <td><button class="delete-button" data-id="${task.id}">Delete</button></td>
+                `)
+            }
+        };
     })
 }
-
 
 // Make a POST request to store data in my server.
 // If it's successful,
@@ -85,20 +92,18 @@ function deleteTask() {
 // making sure it's also updated on the data base
 // and re-render the DOM.
 function updateTask() {
-    //to test
-    console.log('click!');
-    const updatedTask = {
-        id: $('#id-update').val(),
-        task: $('#task-update').val()
-    }
+    const taskID = $(this).data('id');
+    let completedTask = $(this).data('completed');
+    completedTask = true;
+    console.log('taskID', taskID);
+    console.log('completedTask', completedTask);
     $.ajax({
-        method: 'PUT',
-        url: `/tasks/${updatedTask.id}`,
-        data: updatedTask
+        type: 'PUT',
+        url: `/tasks/complete/${taskID}`,
+        data: {completedTask: completedTask}
     }).then((res) => {
-        console.log('PUT is sent!');
         renderTasks();
     }).catch((err) => {
         console.log(err);
-    });
+    })
 }
