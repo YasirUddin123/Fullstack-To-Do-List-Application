@@ -1,4 +1,5 @@
 # Project: SQL To-Do List
+My first Full Stack application!
 
 ## Description
 In this project, I am creating a 'TO DO' application. Here are the features:
