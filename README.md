@@ -69,8 +69,7 @@ I am also including a `database.sql` text file in my repo that will include all 
 
 Thank you to Prime Digital Academy for providing me the resources, knowledge, and support in order to complete this application!
 
-I'm happy to share my code and talk more on how I created this application.
-Please feel free to reach out to me if you'd like to provide feedback, connect, and/or talk more about the field. I'd love to meet over Zoom, coffee, or however else works best for you!
+Please feel free to reach out to me if you have questions, want to provide feedback, code together, and/or talk more about the field. I'd love to meet over Zoom, coffee, or however else works best!
 
 email: yasiruddin625@gmail.com
 LinkedIn: https://www.linkedin.com/in/yasirmuddin/
