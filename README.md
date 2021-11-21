@@ -61,6 +61,6 @@ I am also including a `database.sql` text file in my repo that will include all 
         * Use CSS to differentiate ✅
         * Re-render DOM ✅
 
-    * CSS! Make it look sch-mancy
+    * CSS! Make it look sch-mancy ✅
 
-#### Step 3: Test, Tweak, Repeat
+#### Step 3: Test, Tweak, Repeat ✅
