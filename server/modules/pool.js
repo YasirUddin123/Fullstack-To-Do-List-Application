@@ -3,7 +3,7 @@ const Pool = pg.Pool;
 
 const config = {
     host: 'localhost',
-    database: 'tasks'
+    database: 'weekend-to-do-app'
 };
 
 const pool = new Pool(config);
@@ -11,6 +11,7 @@ const pool = new Pool(config);
 // pool.on('connect', () => {
 //     console.log('\tserver-database connection happened');
 // });
+
 
 pool.on('error', (poolError) => {
     console.log(poolError);
