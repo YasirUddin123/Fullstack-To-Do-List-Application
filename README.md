@@ -11,6 +11,12 @@ In this project, I am creating a 'TO DO' application. Here are the features:
     * Whether or not a Task is completed can also be stored in the database.
     * Deleting a Task can remove it from both the front end as well as the database.
 
+I'm happy to share my code and talk more on how I created this application.
+Please feel free to reach out to me if you'd like to connect. I'd love to meet over Zoom, coffee, or however else works best for you.
+
+email: yasiruddin625@gmail.com
+LinkedIn: https://www.linkedin.com/in/yasirmuddin/
+
 ### Styling
 I used CSS styling to move the aesthetic of the page beyond the vanella HTML look:
 
@@ -28,39 +34,39 @@ I am also including a `database.sql` text file in my repo that will include all 
 
 ### High Level Development Plan
 #### Step 1: Initialize Project
-    * Make a new git branch to 'initialize' my work ✅
-    * Add files and folders to project directory (including .gitignore, HTML, CSS, and JavaScript + jQuery) ✅
+    * Make a new git branch to 'initialize' my work
+    * Add files and folders to project directory (including .gitignore, HTML, CSS, and JavaScript + jQuery)
 
 ##### Front-End:
-    * Create the HTML basic structure for the application ✅
-    * Make sure all files are sourced into HTML file ✅
-        * CSS, jQuery, JavaScript ✅
+    * Create the HTML basic structure for the application
+    * Make sure all files are sourced into HTML file
+        * CSS, jQuery, JavaScript
 
 ##### Back-End:
-    * Run npm init --yes ✅
-    * Make sure "start" script exists in our package.json ✅
-    * Run npm install express and pg ✅
-    * Create a database using SQL via Postico ✅
-    * Create a 'to-do' table using SQL via Postico ✅
-    * Include queries on my database.sql text file ✅
-    * Wire up database connection in pool.js file ✅
-    * Create the minimum code for working Express server in server.js ✅
+    * Run npm init --yes
+    * Make sure "start" script exists in our package.json
+    * Run npm install express and pg
+    * Create a database using SQL via Postico
+    * Create a 'to-do' table using SQL via Postico
+    * Include queries on my database.sql text file
+    * Wire up database connection in pool.js file
+    * Create the minimum code for working Express server in server.js
 
 #### Step 2: Develop Features
-    * Create a task ✅
-        * Store in database ✅
-        * Re-render DOM ✅
+    * Create a task
+        * Store in database
+        * Re-render DOM
 
-    * Delete a task ✅
-        * Delete task in database ✅
-        * Re-render DOM ✅
+    * Delete a task
+        * Delete task in database
+        * Re-render DOM
 
     * Complete a task
-        * Update task in database ✅
-        * Task should be checked off ✅
-        * Use CSS to differentiate ✅
-        * Re-render DOM ✅
+        * Update task in database
+        * Task should be checked off
+        * Use CSS to differentiate
+        * Re-render DOM
 
-    * CSS! Make it look sch-mancy ✅
+    * CSS! Make it look sch-mancy
 
-#### Step 3: Test, Tweak, Repeat ✅
+#### Step 3: Test, Tweak, Repeat
