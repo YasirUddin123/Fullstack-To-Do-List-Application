@@ -11,6 +11,12 @@ In this project, I am creating a 'TO DO' application. Here are the features:
     * Whether or not a Task is completed can also be stored in the database.
     * Deleting a Task can remove it from both the front end as well as the database.
 
+### Languages
+    * HTML5
+    * CSS3
+    * JavaScript (jQuery, Ajax, Node, Express)
+    * SQL
+
 ### Styling
 I used CSS styling to move the aesthetic of the page beyond the vanella HTML look:
 
